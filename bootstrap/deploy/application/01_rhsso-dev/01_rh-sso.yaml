@@ -14,7 +14,7 @@ spec:
   source:
     path: resources/01_rhsso-dev
 # we specify the folder for the files
-    repoURL: 'https://github.com/ignaciolago/keycloak-gitops.git'
+    repoURL: 'https://github.com/rbaumgar/keycloak-gitops.git'
 # the repository url
     targetRevision: HEAD
 # and branch, in this case HEAD / main
