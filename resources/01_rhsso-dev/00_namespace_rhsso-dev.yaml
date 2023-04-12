@@ -5,5 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
 # now that we deploying using ArgoCD we can specify the order of deploy
+  labels:
+    argocd.argoproj.io/managed-by: openshift-gitops
   name: rhsso-dev
 spec: {}
