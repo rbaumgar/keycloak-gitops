@@ -9,3 +9,16 @@ resources:
 - 02_rhsso-operator.yaml
 - 03_deploy_rhsso-dev.yaml
 - 04_rh-sso-hpa.yaml
+patchesJson6902:
+  - target:
+      version: v1alpha1
+      group: keycloak.org
+      kind: Keycloak
+      name: rhsso-dev
+    patch: |-
+      - op: add
+        path: /spec/storageClassName
+        value: nfs-csi-storage
+
+
+   

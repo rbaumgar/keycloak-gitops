@@ -22,4 +22,4 @@ spec:
     imagePullPolicy: Always
   instances: 2
 # we set a minimum of 2 pods for the HA
-# storageClassName: gp2
+  storageClassName: gp2
