@@ -1,0 +1,23 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  # Replace with a name of your choice
+  name: my-cluster-certificate
+  # Set a namespace if required
+  # namespace: default        
+spec:
+  # Wildcard Entry for your domain
+  commonName: my-cluster-kafka.apps.ocp4.openshift.freeddns.org 
+  dnsNames:
+    # List of all (sub)domains that you want to include in the cert
+    - my-cluster-kafka-route-bootstrap-kafka.apps.ocp4.openshift.freeddns.org
+    - my-cluster-kafka-route-0-kafka.apps.ocp4.openshift.freeddns.org
+    - my-cluster-kafka-route-1-kafka.apps.ocp4.openshift.freeddns.org
+    - my-cluster-kafka-route-2-kafka.apps.ocp4.openshift.freeddns.org
+    - my-cluster-kafka.apps.ocp4.openshift.freeddns.org
+  issuerRef:
+    # This should match the issuer you defined earlier
+    name: letsencrypt-clusterissuer   
+    kind: ClusterIssuer
+  # Secret name where the resulting certificate is saved in
+  secretName: my-cluster-certificate 
