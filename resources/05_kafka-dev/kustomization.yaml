@@ -7,4 +7,4 @@ resources:
 - 00_namespace_kafka-dev.yaml
 - 01_rolebinding_kafka-dev.yaml
 - 03_deploy_kafka-dev.yaml
-- 04_cerificate_kafka-dev.yaml
+- 04_certificate_kafka-dev.yaml
