@@ -4,7 +4,7 @@ metadata:
   # Replace with a name of your choice
   name: my-cluster-certificate
   # Set a namespace if required
-  # namespace: default        
+  namespace: kafka
 spec:
   # Wildcard Entry for your domain
   commonName: my-cluster-kafka.apps.ocp4.openshift.freeddns.org 
