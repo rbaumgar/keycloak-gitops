@@ -4,7 +4,7 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 # To skip the dry run for missing resource types, use the following annotation
 resources:
-- 00_namespace_rhsso-dev.yaml
+- 00_namespace_kafka-dev.yaml
 - 01_rolebinding_kafka-dev.yaml
 - 03_deploy_kafka-dev.yaml
 - 04_cerificate_kafka-dev.yaml
