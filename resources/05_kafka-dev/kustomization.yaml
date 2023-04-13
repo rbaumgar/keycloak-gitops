@@ -8,3 +8,4 @@ resources:
 - 01_rolebinding_kafka-dev.yaml
 - 03_deploy_kafka-dev.yaml
 - 04_certificate_kafka-dev.yaml
+- 05_metrics_kafka-dev.yaml
